@@ -91,9 +91,9 @@ fn main() {
    */
   let handles = (0..1500).map(|_| {
     let _owner: String = rand::thread_rng().sample_iter(&Alphanumeric).take(9).map(char::from)
-    .collect();
+    .collect(); // Simulate buyer's data with a random string
 
-    let _number: u8 = rand::thread_rng().gen_range(0..99);
+    let _number: u8 = rand::thread_rng().gen_range(0..99); // Simulate a random number to buy
 
     let raffle_ref = raffle.clone();
 
