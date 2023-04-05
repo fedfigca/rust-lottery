@@ -28,6 +28,7 @@ cargo run
 ## TODO
 * Separate aux code in multiple files and out of main.rs
 * Add index limit checks to all necessary cases
+* Pick a winner 😅
 
 ## Contributing
 
