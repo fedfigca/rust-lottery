@@ -86,10 +86,12 @@ fn main() {
   let raffle: Arc<Mutex<Grid<Ticket>>> = Arc::new(Mutex::new(raffle_tikets));
 
   /*
+   * Unleash the Buyers!
+   *
    * Each handle will trigger a new thread and they will all be collected
    * later for thread conclusion control
    */
-  let handles = (0..1500).map(|_| {
+  let handles = (0..8000).map(|_| {
     let _owner: String = rand::thread_rng().sample_iter(&Alphanumeric).take(9).map(char::from)
     .collect(); // Simulate buyer's data with a random string
 
